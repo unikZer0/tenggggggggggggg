@@ -1,0 +1,306 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Saysettha OT';
+    color: #000;
+}
+
+/* Logo */
+.logo {
+    overflow: hidden;
+    border-radius: 20px 20px;
+}
+.logo img {
+    width: 150px;
+}
+.between {
+    /* border: 1px solid #000; */
+    margin-top: 10px;
+    display: flex;
+    justify-content:space-between;
+    height: 90px;
+    padding: 0 3rem;
+}
+/* .between .logo {
+    
+} */
+.between  .register {
+    /* border: 1px solid #000; */
+    padding: 0.5rem;
+}
+.between  .register a {
+    margin: 0.5rem 0rem 0.5rem 0.5rem;
+    text-decoration: none;
+}
+.between  .register a:hover{
+    color: #e36e59;
+}
+/* navbar */
+.below-navbar  {
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid #000; */
+    padding: 1rem 3rem;
+}
+.below-navbar ul {
+    display: flex; 
+    /* border: 1px solid #000;  */
+}
+.below-navbar ul li {
+    list-style: none;
+    /* border: 1px solid #000; */
+    margin-top: 20px;
+    padding:0px 10px;
+}
+.below-navbar ul li a {
+    text-decoration: none;
+}
+.below-navbar ul li .hover:hover{
+    text-decoration: none;
+    border: 2px solid #000;
+    border-top:none ;
+    border-left: none;
+    border-right: none;
+    transition: 150ms;
+}
+ul li a:hover{
+    text-decoration: none;
+    border: 2px solid #000;
+    border-top:none ;
+    border-left: none;
+    border-right: none;
+}
+/* dropdown-menu */
+.dropdown {
+    position: relative;
+}
+.selector .hover {
+    width: 95px;
+    outline: none;
+    cursor: pointer;
+    border: none; 
+    /* border: 1px solid #000; */
+}
+.selector input::placeholder {
+    font-size: 16px;
+    color:#000;
+}
+.lists {
+    position: absolute;
+    /* border: 1px solid #000; */
+    background-color:#ffffff ;
+    top: 35px;
+    border-radius: 5px;
+    display: none;
+    overflow: hidden;
+}
+.lists .list {
+    padding: 5px 10px;
+}
+.lists .list:hover{
+    background-color: #dedede;
+}
+.show {
+    display: block;
+}
+.bi-chevron-down {
+    position: absolute;
+    right: 10px;
+    top: 1px;
+    /* border: 1px solid #000; */
+}
+.rotate {
+    transform: rotate(180deg);
+    transition: 150ms;
+}
+/* search */
+.con-search {
+    /* border: #000 1px solid; */
+    width: 40%;
+}
+.con-search .search{
+    /* border: 1px solid #000; */
+    padding: 0 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+} 
+.con-search .search input {
+    width:100% ;
+    height: 45px;
+    border: 1px solid #000;
+    border-radius: 20px 0px 0px 20px;
+    padding-left: 20px;
+}
+.con-search .search input::placeholder {
+    font-size: 16px;
+}
+.con-icon {
+    border: 1px solid #000;
+    border-radius: 0px 20px 20px 0px;
+    cursor: pointer;
+    border-left: none;
+    padding: 0px 10px;
+}
+
+.bi-search {
+    font-size: 25px;
+    width: 20px;
+}
+.active:active {
+    transform: scale(1.2);
+}
+
+/* advert */
+.con-advert {
+    background-image:url(./pictures/ourlogo.jpg);
+    width: 100%;
+    height: 400px;
+    padding: 5px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* main-content */
+.con-trending {
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid #000; */
+    padding: 10px 50px;
+}
+.con-trending .trend a{
+    text-decoration: none;
+}
+.con-cont .main-cont  {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    padding: 0 3rem;
+    height: 400px;
+    gap: 20px;
+    /* border: 1px solid #000; */
+}
+/* book-content */
+.mybook .coverbook {
+	width: 100%;
+	height: 350px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/* typenav book */
+/* margin */
+.margin {
+    margin: 0px 3rem;
+}
+.typenav ul {
+    display:flex ;
+    justify-content: space-between;
+    margin: 10px 3rem;
+    background-color: #dedede;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 5px;
+}
+.typenav ul li{
+    list-style: none;
+}
+.typenav ul li a {
+    text-decoration: none;
+    /* border: 1px solid #000; */
+}
+.typenav ul li .adventure,.school {
+    text-decoration: none;
+    border: 2px solid #000;
+    border-top:none ;
+    border-left: none;
+    border-right: none;
+    /* border: 1px solid #000; */
+}
+/* manga-contet */
+.con-cont .main-cont .mymanga {
+    border: 1px solid #000;
+}
+.con-cont .main-cont .last {
+    width: 200%;
+}
+/* footer */
+.footer {
+    display: flex;
+    /* border: 1px solid #000; */
+}
+.footer .logo-footer {
+    width: 40%;
+    /* border: 1px solid #000; */
+    margin: 30px;
+    padding: 15px;
+    background-color: #ebebeb;
+}
+.footer .about-footer {
+    /* border: 1px solid #000; */
+    width: 60%;
+    padding: 15px;
+    margin: 30px;
+    background-color: #ebebeb;
+} 
+/* edit picture */
+.thisbook {
+    max-width: 100%;
+    
+}
+.con-content {
+    padding: 3rem 3.5rem;
+    display: flex;
+}
+.con-content .poster {
+    width: 35%;
+}
+.poster .pic-poster {
+    max-width: 70%;
+}
+.paragrap {
+    width: 70%;
+}
+.b {
+    font-size: 40px;
+    font-family: "Arial", Times, serif;
+}
+ .creater {
+    font-size: 25px;
+}
+.creater a {
+    color: #4365fc;
+}
+.btn:hover {
+    background-color: #406085;
+}
+.btn{
+    margin: 10px 0px;
+    padding: 15px 70px;
+    background-color: #4a79ae;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+.type {
+    height: 100px;
+    margin-top: 20px;
+}
+.type button {
+    border-radius: 20px;
+    border: 1px solid #aaaaaa;
+    margin: 10px 10px;
+}
+.type button:hover {
+    background-color: #b4b4b4;
+    transition: 150ms;
+}
+.type a {
+    font-size: 18px;
+    text-decoration: none;
+    padding: 30px;
+}
+/* short story  */
+.short-story {
+    margin: 0px 3rem;
+}
+/* .con-cont .main-cont .mybook a {
+    border: 1px solid #000;
+} */
